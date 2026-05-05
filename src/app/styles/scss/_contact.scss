@@ -1,0 +1,129 @@
+/*** 
+
+====================================================================
+   contact-section-h1
+====================================================================
+
+***/
+.contact-section-layout2 {
+   padding: 120px 0;
+   position: relative;
+   background: #0C0C0C;
+   overflow: hidden;
+   @include media-breakpoint-down(lg){
+      padding: 80px 0;
+   }
+   &:before {
+      content: '';
+      position: absolute;
+      left: calc(50% - -60px);
+      top: 0;
+      background-color: rgba(var(--theme-color-white-rgb), 0.13);
+      width: 1px;
+      height: 100%;
+      @media (max-width: 1599.98px) {
+         left: calc(50% - 30px);
+      }
+      @include media-breakpoint-down(xl){
+         display: none;
+      }
+   }
+   .shape1 {
+      position: absolute;
+      pointer-events: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .content-column {
+      .inner-column {
+         position: relative;
+         margin-top: 30px;
+         @include media-breakpoint-down(xl){
+            margin-top: 0;
+            margin-bottom: 30px;
+         }
+         .shape2 {
+            position: absolute;
+            right: 100px;
+            top: 0;
+            pointer-events: none;
+            @include media-breakpoint-down(md){
+               display: none;
+            }
+         }
+         .shape3 {
+            position: absolute;
+            right: 100px;
+            bottom: -100px;
+            pointer-events: none;
+            @include media-breakpoint-down(xl){
+               bottom: 30px;
+            }
+            @include media-breakpoint-down(sm){
+               display: none;
+            }
+         }
+      }
+   }
+  .circle-container {
+    position: relative;
+    display: inline-block;
+    .logo {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    text {
+      outline: 1px solid #1F1F1F;
+      border-radius: 50%;
+      outline-offset: -25px;
+    }
+    .text {
+      font-size: 16px;
+      text-transform: uppercase;
+      fill: rgba(255, 255, 255, 0.38);
+    }
+  }
+  .contact-column {
+   .inner-column {
+   }
+   form {
+      border: 1px solid #2C2C2E;
+      border-radius: 15px;
+      padding: 52px 60px 55px;
+      @include media-breakpoint-down(md){
+         padding: 20px;
+      }
+      input,textarea {
+         font-size: 20px;
+         font-weight: 400;
+         color: #fff;
+         background-color: transparent;
+         width: 100%;
+         border-bottom: 1px solid rgba(55, 55, 57, 0.7);
+         padding-bottom: 18px;
+         margin-bottom: 30px;
+         &::placeholder {
+            color: #8B8B8B;
+         }
+      }
+      textarea {
+         margin-bottom: 0;
+         height: 105px;
+      }
+      .btn-style-one {
+         margin-top: 90px;
+         @include media-breakpoint-down(md){
+            margin-top: 20px;
+         }
+      }
+   }
+  }
+}

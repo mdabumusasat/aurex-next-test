@@ -1,0 +1,467 @@
+/***
+
+====================================================================
+    Team Section
+====================================================================
+
+***/
+.teams-section {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+  .outer-box {
+    max-width: 595px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+.team-block {
+  .inner-block {
+    position: relative;
+    margin: 0 23px;
+    &:hover {
+      .image-box {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box {
+        .inner-box {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .image-box {
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      @include transition(all 500ms ease);
+    }
+  }
+  .content-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10px 42px;
+    overflow: hidden;
+    .inner-box {
+      background-color: var(--theme-color-white);
+      padding: 17px 15px;
+      border-radius: 4px;
+      text-align: center;
+      max-width: 310px;
+      margin: 0 auto;
+      transform: translateY(100px);
+      opacity: 0;
+      visibility: hidden;
+      @include transition(all 500ms ease);
+      .title {
+        color: var(--theme-color-dark);
+        margin-bottom: 3px;
+        span {
+          font-weight: 300;
+        }
+      }
+      .designation {
+        color: var(--theme-color-gray);
+      }
+    }
+  }
+}
+
+/***
+
+====================================================================
+    Team Section
+====================================================================
+
+***/
+.teams-section-layout2 {
+  padding: 120px 0;
+  position: relative;
+  background-color: #0C0C0C;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}
+.team-block-layout2 {
+  .inner-block {
+    position: relative;
+    margin-bottom: 30px;
+    &:hover {
+      .image-box {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box {
+        .title {
+          color: var(--theme-color1);
+        }
+      }
+      .social-icon {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image-box {
+    border-radius: 4px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    @include media-breakpoint-down(lg){
+      height: 400px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      object-fit: cover;
+      @include transition(all 500ms ease);
+    }
+  }
+  .content-box {
+    .inner-box {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 0 24px;
+      @include media-breakpoint-down(sm){
+        padding: 0;
+      }
+    }
+    .title {
+      margin-bottom: 3px;
+    }
+  }
+  .social-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 300ms ease);
+    li {
+      a {
+        width: 28px;
+        height: 28px;
+        line-height: 27px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #B5B5B5;
+        display: inline-block;
+        color: #B5B5B5;
+        font-size: 14px;
+        &:hover {
+          color: var(--theme-color1);
+          border-color: var(--theme-color1);
+        }
+      }
+    }
+  }
+}
+
+/***
+
+====================================================================
+    Team Section
+====================================================================
+
+***/
+.team-block-layout3 {
+  .inner-block {
+    position: relative;
+    margin: 0 23px;
+    @include media-breakpoint-down(sm){
+      margin: 0;
+    }
+    &:hover {
+      .image-box {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box {
+        .title {
+          color: var(--theme-color1);
+        }
+      }
+    }
+  }
+  .image-box {
+    border-radius: 12px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      @include transition(all 500ms ease);
+    }
+  }
+  .content-box {
+    .inner-box {
+      padding-left: 24px;
+    }
+    .title {
+      color: var(--text-color);
+      margin-bottom: 3px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/***
+====================================================================
+    Team Section 4
+====================================================================
+***/
+.team-block-layout4 {
+  .inner-block {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:hover {
+      .image-box {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box {
+        .title {
+          color: var(--theme-color1);
+        }
+      }
+      .social-icon {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image-box {
+    border-radius: 12px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      @include transition(all 500ms ease);
+    }
+  }
+  .content-box {
+    .inner-box {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 0 24px;
+      @include media-breakpoint-down(sm){
+        padding: 0;
+      }
+    }
+    .title {
+      color: var(--text-color);
+      margin-bottom: 3px;
+    }
+  }
+  .social-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 300ms ease);
+    li {
+      a {
+        width: 28px;
+        height: 28px;
+        line-height: 27px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #B5B5B5;
+        display: inline-block;
+        color: #B5B5B5;
+        font-size: 14px;
+        &:hover {
+          color: var(--theme-color1);
+          border-color: var(--theme-color1);
+        }
+      }
+    }
+  }
+}
+
+
+/***
+====================================================================
+  Team Section 5
+====================================================================
+***/
+.team-block-items2 {
+  background-color: #181818;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  position: relative;
+  z-index: 9;
+  .thumb {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    img {
+      border-radius: 20px;
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      @include transition(all 500ms ease);
+      &:first-child{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        -webkit-transform: translateX(50%) scaleX(2);
+        transform: translate(50%) scaleX(2);
+        opacity: 0;
+        -webkit-filter: blur(10px);
+        filter: blur(10px)
+      }
+    }
+  }
+  .team-content {
+    background-color: var(--bg-color);
+    padding: 20px 20px;
+    border-radius: 20px;
+    position: relative;
+    .title {
+      margin-bottom: 0;
+      a {
+        background-position: 0 95%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        display: inline;
+        &:hover {
+          background-size: 100% 2px;
+          background-image: linear-gradient(180deg, var(--theme-color1) 0%, var(--theme-color1) 100%);
+          color: var(--theme-color1);
+        }
+      }
+    }
+    .share-icon {
+      background-color: var(--theme-color1);
+      background-size: 200%;
+      border-radius: 50%;
+      bottom: 19px;
+      color: var(--theme-color1-text-color);
+      cursor: pointer;
+      font-size: 16px;
+      height: 50px;
+      line-height: 50px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 50px;
+      @include transition(all 400ms ease);
+      z-index: 3;
+      @include media-breakpoint-down (sm){
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+      }
+      &:hover {
+        background-position: 100% 0;
+      }
+    }
+    .social-links {
+      position: absolute;
+      right: 20px;
+      bottom: 85px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      flex-direction: column;
+      background: transparent;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      opacity: 0;
+      @include transition(all 400ms ease);
+      visibility: hidden;
+      z-index: 3;
+      a {
+        background: var(--theme-color1);
+        background-size: 200%;
+        border-radius: 50%;
+        color: var(--theme-color1-text-color);
+        display: block;
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        text-align: center;
+        width: 50px;
+        @include transition(all 400ms ease);
+        @include media-breakpoint-down (sm){
+          width: 40px;
+          height: 40px;
+          font-size: 14px;
+          line-height: 40px;
+        }
+        &:hover {
+          background-position: 100% 0;
+        }
+      }
+    }
+  }
+  &:hover {
+    .thumb {
+     img {
+      &:first-child {
+        -webkit-transform: translateX(0) scaleX(1);
+        transform: translate(0) scaleX(1);
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0)
+      }
+      &:nth-child(2){
+        -webkit-transform: translateX(-50%) scaleX(2);
+        transform: translateX(-50%) scaleX(2);
+        opacity: 0;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+      }
+    }
+  }
+  .team-content {
+    .social-links {
+     opacity: 1;
+     -webkit-transform: scaleY(1);
+     transform: scaleY(1);
+     visibility: visible;
+   }
+   .share-icon {
+    background-color: var(--theme-color1);
+  }
+}
+}
+}

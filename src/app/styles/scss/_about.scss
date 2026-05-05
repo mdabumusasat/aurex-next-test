@@ -1,0 +1,229 @@
+/*** 
+
+====================================================================
+   About Section
+====================================================================
+
+***/
+.about-section {
+   position: relative;
+   padding: 120px 0;
+   @include media-breakpoint-down(lg){
+      padding: 80px 0;
+   }
+   .shape-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: -1;
+   }
+   .shape-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: -1;
+   }
+   .content-column {
+      .inner-column {
+        position: relative;
+        .image {
+          border-radius: 0 12px 12px 0;
+          overflow: hidden;
+          margin-top: 180px;
+          margin-left: -150px;
+          margin-right: 92px;
+          @include media-breakpoint-down(xl){
+            margin-top: 80px;
+          }
+          @include media-breakpoint-down(sm){
+            margin-left: 0;
+            width: 100%;
+            border-radius: 12px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 12px 12px 0;
+          }
+        }
+        .image2 {
+          width: 191px;
+          border-radius: 16px;
+          transform: rotate(-14.62deg);
+          overflow: hidden;
+          position: absolute;
+          right: 155px;
+          top: 250px;
+          @media (max-width: 1399.98px) {
+            right: 44px;
+            top: 450px;
+          }
+          @include media-breakpoint-down(sm){
+            display: none;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .sec-title{
+        margin-bottom: 0;
+        .bottom-box {
+          max-width: 459px;
+          margin-left: 60px;
+          @include media-breakpoint-down(sm){
+            margin-left: 0;
+          }
+          .btn-style-one {
+            margin-top: 50px;
+          }
+        }
+      }
+   }
+   .about-column {
+    .inner-column {
+      position: relative;
+      padding-top: 325px;
+      @include media-breakpoint-down(xl){
+        padding-top: 100px;
+      }
+    }
+   }
+   .circle-container {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    .logo {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    text {
+      outline: 1px solid #1F1F1F;
+      border-radius: 50%;
+      outline-offset: -25px;
+    }
+    .text {
+      font-size: 16px;
+      text-transform: uppercase;
+      fill: rgba(255, 255, 255, 0.38);
+    }
+   }
+   .about-counter-info {
+    border: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+    background-color: #0B0B0B;
+    border-radius: 24px;
+    padding: 44px 60px 54px;
+    @media (max-width: 1599.98px) {
+      padding: 44px 43px 54px;
+    }
+    @include media-breakpoint-down(sm){
+      padding: 40px 20px 30px;
+    }
+    .count-box {
+      font-size: 120px;
+      line-height: 1;
+      color: rgba(79, 124, 253, 0.37);
+      margin-bottom: 4px;
+      @include media-breakpoint-down(sm){
+        font-size: 90px;
+      }
+      .count-text {
+        color: var(--theme-color1);
+      }
+    }
+    .title {
+      border-bottom: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+      padding-bottom: 26px;
+      margin-bottom: 23px;
+    }
+    .text {
+      font-size: 18px;
+      max-width: 238px;
+      margin-bottom: 90px;
+      @include media-breakpoint-down(sm){
+        margin-bottom: 50px;
+      }
+    }
+    .image-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 4px solid #0D0D0D;
+        margin-right: -19px;
+      }
+    }
+   }
+}
+
+/*** 
+
+====================================================================
+   About Section 2
+====================================================================
+
+***/
+.about-section-layout2 {
+  position: relative;
+  padding: 120px 0;
+  .shape-1 {
+    position: absolute;
+    left: 324px;
+    bottom: 100px;
+    pointer-events: none;
+    @include media-breakpoint-down(xl){
+      display: none;
+    }
+  }
+  .shape-2 {
+    position: absolute;
+    left: 0;
+    top: -500px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+  .content-column {
+    .inner-column {
+      .title {
+        font-weight: 400;
+        margin-bottom: 63px;
+        @include media-breakpoint-down(lg){
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .circle-container {
+    position: relative;
+    display: inline-block;
+    .logo {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    text {
+      outline: 1px solid #1F1F1F;
+      border-radius: 50%;
+      outline-offset: -25px;
+    }
+    .text {
+      font-size: 16px;
+      text-transform: uppercase;
+      fill: rgba(255, 255, 255, 0.38);
+    }
+  }
+}

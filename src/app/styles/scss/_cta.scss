@@ -1,0 +1,133 @@
+/***
+
+====================================================================
+   Cta Section
+====================================================================
+
+***/
+.cta-section {
+   position: relative;
+   padding: 120px 0;
+   @include media-breakpoint-down(lg){
+      padding: 80px 0;
+   }
+   .shape1 {
+      position: absolute;
+      pointer-events: none;
+      left: 0;
+      top: 0;
+      z-index: -1;
+   }
+   .sec-title {
+      .text {
+         margin-top: 32px;
+         margin-bottom: 40px;
+      }
+   }
+   .bottom-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      @include media-breakpoint-down(sm){
+         flex-direction: column;
+         gap: 10px;
+      }
+   }
+}
+
+/***
+
+====================================================================
+   Cta Section 2
+====================================================================
+
+***/
+.cta-section-layout2 {
+   padding: 120px 0;
+   @include media-breakpoint-down(lg){
+      padding: 80px 0;
+   }
+   .outer-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      height: 609px;
+      .bg-image {
+         width: 100%;
+         height: 100%;
+         border-radius: 12px;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+         }
+      }
+   }
+  .cta-info-box {
+    max-width: 317px;
+    background-color: #0D0D0D;
+    padding: 28px 30px 31px;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 17px;
+    right: 80px;
+    @include media-breakpoint-down(lg){
+      right: 20px;
+    }
+    @include media-breakpoint-down(sm){
+      right: 5px;
+      bottom: 10px;
+    }
+    .image-box {
+      margin-left: 13px;
+      display: flex;
+      align-items: center;
+      margin-top: 18px;
+      img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #17101D;
+        margin-left: -13px;
+      }
+      .icon {
+        background-color: var(--theme-color1);
+        color: var(--theme-color-white);
+        width: 38px;
+        height: 38px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #17101D;
+        margin-left: -13px;
+      }
+    }
+    .counter-box {
+      display: flex;
+      align-items: end;
+      gap: 5px;
+      margin-top: 17px;
+      .count-box {
+        margin-bottom: 0;
+        line-height: 1;
+        font-weight: 700;
+        .count-text {
+          line-height: 1;
+        }
+      }
+    }
+  }
+  .btn-style-two {
+   text-transform: uppercase;
+   font-size: 16px;
+   width: 100%;
+   padding: 22px 22px;
+   justify-content: center;
+   margin-top: 24px;
+  }
+}

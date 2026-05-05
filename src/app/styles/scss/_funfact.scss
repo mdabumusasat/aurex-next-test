@@ -1,0 +1,107 @@
+/*** 
+
+====================================================================
+funfact-section 2
+====================================================================
+
+***/
+.funfact-section-layout2 {
+	position: relative;
+	padding: 90px 0;
+	border-top: 1px solid #3A2C32;
+	@include media-breakpoint-down(lg){
+		padding: 80px 0;
+	}
+	.outer-box {
+		max-width: 1346px;
+		margin: 0 auto;
+		display: flex;
+		gap: 150px;
+		padding: 0 15px;
+		@include media-breakpoint-down(lg){
+			gap: 50px;
+		}
+		@include media-breakpoint-down(md){
+			flex-wrap: wrap;
+		}
+	}
+}
+.funfact-box-layout2 {
+	.inner-box {
+		.title {
+			color: var(--text-color);
+			margin-bottom: 0;
+		}
+		.count-box {
+			color: var(--theme-color-white);
+			font-size: 72px;
+			line-height: 1;
+			margin-bottom: 24px;
+			margin-top: 24px;
+		}
+		.text {
+			color: rgba(var(--theme-color-white-rgb), 0.7);
+		}
+	}
+}
+
+
+/*** 
+
+====================================================================
+funfact-section 4
+====================================================================
+
+***/
+
+.funfact-block-layout4 {
+	.inner-block {
+	  position: relative;
+	  .count-box {
+	    display: flex;
+	    .count-text {
+	      font-size: 180px;
+	      font-weight: 800;
+	      line-height: 150px;
+	      margin-bottom: 0;
+	      background-image: url(/assets/images/resource/funfact4-1.jpg);
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	      background-position: center center;
+	      -webkit-background-clip: text;
+	      color: transparent;
+	    }
+	    span {
+	    	color: var(--headings-color);
+	      font-size: 50px;
+	      font-weight: 600;
+	      position: relative;
+				bottom: 7px;
+				left: -3px;
+	    }
+	  }
+	  .title {
+	    font-size: 18px;
+	    font-weight: 500;
+	    color: rgba(170, 170, 170, 0.7);
+	    margin-top: 10px;
+	  }
+	}
+}
+
+
+.funfact-item-layout6 {
+	.count-box {
+		font-size: 225px;
+		font-weight: 500;
+		background: linear-gradient(180deg, #FF7903 0%, #F55CAD 65.38%, #716CEE 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: 1;
+	}
+	.text {
+		font-size: 18px;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+}

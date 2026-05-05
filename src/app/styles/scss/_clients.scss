@@ -1,0 +1,136 @@
+/***
+
+====================================================================
+    Clients Section
+====================================================================
+
+***/
+.clients-section {
+    padding: 120px 0;
+    position: relative;
+    background-color: #0B0B0B;
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+    .shape1 {
+        position: absolute;
+        pointer-events: none;
+        bottom: 100px;
+        right: 0;
+    }
+    .client-img {
+        border: 1px solid transparent;
+        border-radius: 6px;
+        text-align: center;
+        filter: brightness(200%) saturate(0%);
+        opacity: 0.4;
+        width: 250px;
+        height: 107px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition(all 300ms ease);
+
+        &:hover {
+            opacity: 1;
+            filter: initial;
+            border-color: #17171B;
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Clients Section Two
+====================================================================
+
+***/
+.clients-section-two {
+  position: relative;
+  .outer-box {
+    border: 1px solid #242425;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .title-box {
+      padding: 106px 30px;
+      border-right: 1px solid #242425;
+      @include media-breakpoint-down(lg){
+        padding: 64px 10px;
+      }
+      .title {
+        font-weight: 500;
+        color: #696969;
+        transform: rotate(-90deg);
+        margin-bottom: 0;
+        @include media-breakpoint-down(lg){
+          font-size: 24px;
+        }
+      }
+    }
+    .right-side {
+        padding-left: 100px;
+        padding-left: 100px;
+        @include media-breakpoint-down(xl){
+          padding: 0 50px;
+        }
+      .clients-swiper {
+        .swiper-slide {
+          width: fit-content !important;
+        }
+        .swiper-wrapper {
+            gap: 60px;
+        }
+      }
+      .swiper-slide-active {
+        .client-block-two {
+          .inner-block {
+            .image {
+              a {
+                img {
+                  filter: brightness(0) invert(1);
+                }
+              }
+            }
+          }
+        }
+      }
+      .client-block-two {
+        width: fit-content;
+        .inner-block {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 20px;
+          width: fit-content;
+          cursor: pointer;
+          &:hover {
+            .image {
+              a {
+                img {
+                  filter: brightness(0) invert(1);
+                }
+              }
+            }
+          }
+          .image {
+            a {
+              img {
+                transition: all .4s;
+              }
+            }
+          }
+          .text {
+            line-height: 1;
+              color: #494949;
+              font-size: 18px;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
