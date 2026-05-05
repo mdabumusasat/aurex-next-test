@@ -3198,7 +3198,7 @@ Main Header
   .main-header .main-box .nav-outer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+          justify-content: flex-end;
   }
 }
 
