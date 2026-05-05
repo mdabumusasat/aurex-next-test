@@ -12,7 +12,7 @@ const skills = [
 ];
 
 export default function WorkSection() {
-  const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
   const [activeSkill, setActiveSkill] = useState("Figma");
 
   useEffect(() => {
