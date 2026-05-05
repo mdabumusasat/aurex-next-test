@@ -15,14 +15,6 @@ export default function WorkSection() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
   const [activeSkill, setActiveSkill] = useState("Figma");
 
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.default.init({
-        once: true,
-        duration: 1000,
-      });
-    });
-  }, []);
 
   return (
     <section className="work-section pt-0 pb-80">
@@ -41,18 +33,14 @@ export default function WorkSection() {
                   className="work-block"
                   data-aos="fade-up"
                   data-aos-delay={200 + index * 100}
-                  onMouseEnter={() => setHoveredSkill(skill.title)}
                   onMouseLeave={() => setHoveredSkill(null)}
-                  onClick={() => setActiveSkill(skill.title)}
-                >
+                  onClick={() => setActiveSkill(skill.title)}>
                   <div className="inner-block">
                     <div
                       className={`inner-box ${
                         isHovered || isActive ? "active" : ""
-                      }`}
-                    >
+                      }`}>
                       <span className="icon">
-                        {/* ✅ FIXED (skill instead of item) */}
                         <img
                           src={`/assets/images/resource/${skill.icon}`}
                           alt={skill.title}
